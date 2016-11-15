@@ -1,0 +1,133 @@
+# This is for login process for users
+
+Users = {}
+status = ""
+print("PRUDENT HEALTH CARE CENTER")
+print("Welcome to our heaven,Give us chance to make you feel relif")
+
+if status != "n":
+    status = input("Are you a registered usee?y/n? press n for new registration: ")
+    if status == "n":
+        createLogin = input("Create login name: ")
+        createPassword = input("Create password: ")
+        print("user name created")
+
+    elif status == "y":
+        login = input("Enter login name: ")
+        login = input("Enter password at least 8 digit: ")
+        print("processing your request")
+
+    # Doctor  selection and for which diseases
+    print("Available Doctor in clinc  ")
+    print("R. Dr.Rizu- Dermalogist")
+    print("B. Dr.Biswas- Neurologist")
+    print("N. Dr.Nirmita-Gyanoclogist")
+    print("S. Dr.Shristi-Pysican")
+
+
+    # This is for Dr.Rizu
+
+select_doctor = input("Choose your doctor")
+if select_doctor == "R":
+
+    print(" Appointment time for Dr.Rizu \n a. 10AM-11AM \n b.12AM-1PM \n c. 2PM-3PM")
+
+    your_time = input("select time for appointment")
+    if your_time == "a":
+        print("a. 10AM-11AM")
+    elif your_time == "b":
+        print("b. 12AM-1PM")
+    elif your_time == "c":
+        print("c. 2PM-3PM")
+    else:
+        print("sorry Dr.Rizu is not available retryyyyyyyyyy")
+        # This is for Dr.Biswas
+
+elif select_doctor == "B":
+
+    print(" Appointment time for Dr.Biswas \n a. 10:30AM-11:30AM\n b. 12:30PM-1:30PM \n c. 2:30PM-3:30PM")
+
+    your_time = input("select time for appointment ")
+    if your_time == "a":
+        print("a. 10:30AM-11:30AM")
+    elif your_time == "b":
+        print("b. 12:30PM-1:30PM")
+    elif your_time == "c":
+        print("c. 2:30PM-3:30PM")
+    else:
+        print("sorry Dr.Biswas is not available retryyyyyyyyyy")
+
+        # This is for Dr.Nirmita
+
+elif select_doctor == "N":
+
+    print(" Appointment time for Dr.Nirmita \n a. 11AM-12AM \n b. 1PM-2PM \nc. 3PM-4PM")
+
+    your_time = input("select time for appointment")
+
+    if your_time == "a":
+        print("a. 11AM-12AM")
+    elif your_time == "b":
+        print("b. 1PM-2PM")
+    elif your_time == "c":
+        print("c. 3PM-4PM")
+    else:
+        print("sorry Dr.Nirmita is not available retryyyyyyyyyy!!!")
+
+        # This is for Dr.Shristi
+
+elif select_doctor == "S":
+
+    print("Appointment time for Dr.Rosan \n a. 1:30PM-2:30AM \n b. 3:30PM-4:30PM \n c. 4:30PM-5:30PM")
+
+    your_time = input("Select time for appointment")
+
+    if your_time == "a":
+        print("a. 1:30PM-2:30AM")
+    elif your_time == "b":
+        print("b. 3:30PM-4:30PM")
+    elif your_time == "c":
+        print("c. 2:30PM-3:30PM")
+    else:
+        print("sorry Dr.Shristi is not available retryyyyyyyyy!!!!!")
+else:
+    print("No doctors available")
+
+    User = input("Enter patient detail for appointment: ")
+print("wait for clinic responce")
+
+status = input("Are you consult with Dr.?y/n? press n to quit: ")
+if status =="y":
+
+    # This is for payment process
+
+    print("If payment done by cash 1")
+    print("If payment done by credit card 2")
+    payment = input("finish the payment")
+    if payment == "1":
+        print("Cash record have been recorded")
+        recbill = input("Please enter the receipt for the bill")
+        print(recbill)
+        print = input("Thank you")
+    elif payment == "2":
+        print("credit record have been recorded")
+        creditbill = input("Please enter the credit card number")
+        print(creditbill)
+        print("Your process have been complited!!!")
+        print("Thank you")
+    else:
+        print(" If you have not paid then can you please go for payment")
+
+        print("Your process have been complited ,Thank you for help!!!")
+
+else:
+    print("Please wait and  recheck with Dr.!!!!")
+
+#This is for log out process
+
+status = input("Do you want to logout?y/n? press n to quit: ")
+
+if status == "y":
+     print("Log out")
+else:
+    print("Stay with Us")
